@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">PipelineRecorder</string>
+    <string name="username">PipelineRecorder</string>
+    <string name="titletext">Pipeline Recorder</string>
+
+    <string name="home">Home</string>
+    <string name="myline">My PipeLine</string>
+    <string name="map">PipeLine Map</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Log Out</string>
+    <string name="internet_not_available">Internet not available, Cross check your internet connectivity and try again</string>
+    <string name="invitelink">"Download App: https://play.google.com/store/apps/details?id=com.kuruvatech.PipelineMap"</string>
+
+    <string name="pref_header_about">About</string>
+    <string name="pref_header_contact_ust">Contact Us</string>
+    <string name="pref_header_email">kuruvatechnologies@gmail.com</string>
+
+    <string name="summary_about">We are a team of like-minded people from Kuruva Technologies LLP, specialized in development of Android App Development creating new trends across the app space. Glad to Help in anyway!</string>
+    <string name="title_select_language">Select language</string>
+    <!--<string name="title_upload_quality">Select language</string>-->
+    <string name="summary_language">English or Kannada</string>
+    <string name="tell_friend">Tell a friend</string>
+    <string name="app_version">1.0</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="hint_name">Customer Name</string>
+    <string name="hint_size">Size of Pipe</string>
+    <string name="hint_type">Type of pipe</string>
+    <string name="hint_purpose">Purpose of PipeLine</string>
+    <string name="hint_ramarks">Remarks</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_date">Date of Installation</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone No</string>
+    <string name="size">Size of PipeLine</string>
+    <string name="type">Type of PipeLine</string>
+    <string name="purpose">Purpose</string>
+    <string name="ramarks">Remarks</string>
+    <string name="email">Email</string>
+    <string name="date">Date of Installation</string>
+    <string name="btn_sign_up">Register New Pipeline</string>
+    <string name="hint_phone">Customer Valid Phone Number</string>
+    <string name="connect_to_person">Write a letter</string>
+    <string name="name_validate">Enter Name</string>
+    <string name="letter_validate">Write Something into letter</string>
+    <string name="email_validate">Invalid Email</string>
+    <string name="phone_validate">Enter Valid Phone Number</string>
+    <string name="clickable">Clear Pipeline Map</string>
+    <string name="permission_rationale_location">permission_rationale_location</string>
+    <string name="location_permission_denied">location_permission_denied</string>
+    <string name="permission_required_toast">permission_required_toast.</string>
+    <string name="polyline_demo_description">polyline_demo_description.</string>
+</resources>

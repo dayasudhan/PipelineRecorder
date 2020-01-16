@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/alertDialogLoginForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="35dp">
+
+        <!-- User name row. -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:" />
+            <EditText
+                android:id="@+id/loginFormUserName"
+                android:lines="1"
+                android:maxLines="1"
+                android:maxLength="25" />
+        </TableRow>
+
+        <!-- Password row. -->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" >-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Password:"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/loginFormPassword"-->
+<!--                android:password="true"-->
+<!--                android:lines="1"-->
+<!--                android:maxLines="1"-->
+<!--                android:maxLength="15"/>-->
+
+<!--        </TableRow>-->
+
+        <!-- Phone number row. -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"/>
+            <EditText
+                android:id="@+id/loginFormPhoneNumber"
+                android:phoneNumber="true"
+                android:lines="1"
+                android:maxLines="1"
+                android:maxLength="18"/>
+        </TableRow>
+
+        <!-- Buttons row. -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button android:id="@+id/btn_send"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_sign_up"
+                android:background="@color/bittersweet2"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white"/>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+         <item android:id="@+id/main"
+            android:title="@string/home"
+            android:icon="@mipmap/ic_nav_home_congress" />
+        <item android:id="@+id/myline"
+            android:title="@string/myline"
+            android:icon="@mipmap/ic_pipeline2" />
+        <item android:id="@+id/multiline"
+            android:title="@string/map"
+            android:icon="@mipmap/ic_multipipeline" />
+        <item android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@mipmap/ic_settings" />
+        <item android:id="@+id/share"
+            android:title="@string/share"
+            android:icon="@mipmap/ic_nav_share_congress" />
+        <item android:id="@+id/logout"
+            android:title="@string/logout"
+            android:icon="@mipmap/ic_logout" />
+    </group>
+</menu>

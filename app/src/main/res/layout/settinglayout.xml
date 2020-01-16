@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            tools:context=".fragment.ShareAppFragment">
+
+            <!--<ListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/title_select_language"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="left"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="25dp"
+
+                android:visibility="visible" />
+
+            <Switch
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="40dp"
+                android:text="@string/summary_language"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/blueline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingBottom="10dip" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:context=".fragment.ShareAppFragment">
+
+            <!--<ListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pref_header_about"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="0dp"
+
+                android:visibility="visible" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/summary_about"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="visible" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/language2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:text="@string/summary_about"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:src="@drawable/blueline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingBottom="10dip" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:context=".fragment.ShareAppFragment">
+
+            <!--<ListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pref_header_contact_ust"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="0dp"
+
+                android:visibility="visible" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pref_header_email"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+
+                android:visibility="visible" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/language2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:text="@string/summary_about"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

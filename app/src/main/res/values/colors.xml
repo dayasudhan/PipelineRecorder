@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="toolbar">#65C178</color>
+    <color name="background">#459F4E</color>
+    <color name="backgroundgagan">#e9e9e9</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary_light">#5C767C</color>
+    <color name="hotelinfobg">#B6EDC4</color>
+    <color name="titleTextColor">#00B16A</color>
+    <color name="black">#FFFFFF</color>
+    <color name="Amber">#FFA000 </color>
+    <color name="amber_tool_bar_color">#FFC107 </color>
+    <color name="background_color">#ffffff</color>
+    <color name="title_text_color">#050000</color>
+    <color name="secondary_text_color">#808080</color>
+    <!--<color name="title_text_color">#000000</color>-->
+    <!--<color name="secondary_text_color">#4089ed</color>-->
+    <!--<color name="third_text_color">#6ec4ed</color>-->
+    <color name="img_background">#ffffff</color>
+    #36802d
+
+    <color name="parrotgreen6">#ECECEC</color>
+
+    <!--gagan-->
+
+    <!-- Screens background color-->
+    <color name="black2">#000000</color>
+    <color name="bg_screen1">#000000</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#ffffff</color>
+    <color name="dot_dark_screen2">#b2b2b2</color>
+    <color name="dot_dark_screen3">#b2b2b2</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#b2b2b2</color>
+    <color name="dot_light_screen2">#f2f2f2</color>
+    <color name="dot_light_screen3">#f2f2f2</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <color name="grapefruit1">#ED5565</color>
+    <color name="grapefruit2">#DA4453</color>
+
+    <color name="bittersweet1">#fe6e51</color>
+    <color name="bittersweet2">#e9573f</color>
+
+    <color name="bluejeans1">#5d9cec</color>
+    <color name="bluejeans2">#4a89dc</color>
+
+    <color name="lavender1">#ac92ec</color>
+    <color name="lavender2">#967adc</color>
+
+    <color name="pinkrose1">#ec87c0</color>
+    <color name="pinkrose2">#d770ad</color>
+
+    <color name="sunflower1">#ffce54</color>
+    <color name="sunflower2">#f6bb42</color>
+
+    <color name="mint1">#48cfad</color>
+    <color name="mint2">#37bc9b</color>
+
+    <color name="Cobalt">#035B98</color>
+    <color name="NavyBlue">#0174C2</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

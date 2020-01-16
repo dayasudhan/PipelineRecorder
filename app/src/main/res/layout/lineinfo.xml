@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+    <TableRow android:background="#0079D6" android:padding="5dp" android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/infoHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0079D6"
+            android:fontFamily="serif"
+            android:text="PipeLine"
+            android:textSize="18sp"
+            android:gravity="center"
+
+            android:textStyle="bold" />
+
+
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/name" />
+        <TextView
+            android:id="@+id/infoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/phone" />
+        <TextView
+            android:id="@+id/infoPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="@string/date" />
+    <TextView
+        android:id="@+id/infoDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="" />
+
+</TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/type" />
+        <TextView
+            android:id="@+id/infoType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/size" />
+        <TextView
+            android:id="@+id/infoSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/purpose" />
+        <TextView
+            android:id="@+id/infoPurpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+    </TableRow>
+    <TableRow android:background="#DAE8FC" android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/ramarks" />
+        <TextView
+            android:id="@+id/infoRemarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+    </TableRow>
+</TableLayout>

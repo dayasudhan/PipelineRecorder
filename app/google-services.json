@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "974912325486",
+    "firebase_url": "https://pipeline-ae8ac.firebaseio.com",
+    "project_id": "pipeline-ae8ac",
+    "storage_bucket": "pipeline-ae8ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974912325486:android:320edb8915e86c37b1637f",
+        "android_client_info": {
+          "package_name": "com.kuruvatech.pipeline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974912325486-qthoruomvqpvv39itgv7l9fo2q14t7en.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADzYB4sUATiWJHRT8BnrTwjtL55UiSNDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974912325486-qthoruomvqpvv39itgv7l9fo2q14t7en.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

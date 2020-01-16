@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:fillViewport="true">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2"
+    tools:context="com.kuruvatech.pipelinerecorder.SingleViewActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp">
+
+
+            <com.kuruvatech.pipelinerecorder.utils.TouchImageView
+                android:id="@+id/SingleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/imagesharebutton2"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagesharebutton2"
+                android:src="@mipmap/ic_action_share_jds"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" />
+<!--            <com.google.android.gms.ads.AdView-->
+<!--                xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--                android:id="@+id/adView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                ads:adSize="SMART_BANNER"-->
+<!--                ads:adUnitId="ca-app-pub-6150934781455122/2281377166">-->
+<!--            </com.google.android.gms.ads.AdView>-->
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+    <!--</ScrollView>-->

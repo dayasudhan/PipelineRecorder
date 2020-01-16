@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PipelineMap</string>
+    <string name="username">PipelineMap</string>
+    <string name="titletext">PipelineMap</string>
+
+
+    <string name="home">ಮುಖಪುಟ</string>
+    <string name="about">"ನಮ್ಮ ಪರಿಚಯ"</string>
+    <string name="share">ಈ ಅಪ್ಲಿಕೇಶನ್ ಹಂಚಿ</string>
+    <string name="settings">ಸೆಟ್ಟಿಂಗ್</string>
+    <string name="title_select_language">ಬಾಷೆ ಬದಲಾಯಿಸಿ</string>
+    <!--<string name="title_upload_quality">Select language</string>-->
+    <string name="summary_language">ಕನ್ನಡ ಅಥವಾ ಇಂಗ್ಲೀಶ್</string>
+    <string name="tell_friend">ಈ ಅಪ್ಲಿಕೇಶನ್ ಹಂಚಿ</string>
+    <string name="name">Customer Name</string>
+    <string name="size">Size of Pipe</string>
+    <string name="type">Type of pipe</string>
+    <string name="purpose">Purpose of PipeLine</string>
+    <string name="ramarks">Remarks</string>
+    <string name="email">Email</string>
+    <string name="date">Date of Installation</string>
+    <string name="phone">Phone No</string>
+    <string name="hint_name">ಪೂರ್ಣ ಹೆಸರು</string>
+    <string name="hint_size">Customer Name</string>
+    <string name="hint_type">Customer Name</string>
+    <string name="hint_purpose">Customer Name</string>
+    <string name="hint_ramarks">Customer Name</string>
+    <string name="hint_date">Date of Installation</string>
+    <string name="hint_email">ಇಮೇಲ್</string>
+    <string name="btn_sign_up">ಹೊಸ ಪೈಪ್‌ಲೈನ್ ನೋಂದಾಯಿಸಿ</string>
+    <string name="hint_phone">ದೂರವಾಣಿ ಸಂಖ್ಯೆ</string>
+    <string name="connect_to_person">ಪತ್ರ ಬರೆಯಿರಿ</string>
+    <string name="name_validate">ಹೆಸರು ನಮೂದಿಸಿ</string>
+    <string name="letter_validate">ಪತ್ರವನ್ನು ಬರೆಯಿರಿ</string>
+    <string name="email_validate">ಇಮೇಲ್ ಸರಿಯಾಗಿಲ್ಲ</string>
+    <string name="phone_validate">ಫೋನ್ ಸಂಖ್ಯೆ ಸರಿಯಾಗಿಲ್ಲ</string>
+    <string name="pref_header_about">ನಮ್ಮ ಬಗ್ಗೆ</string>
+    <string name="pref_header_contact_ust">ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</string>
+    <string name="pref_header_email">kuruvatechnologies@gmail.com</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="summary_about">ಈ ಆಂಡ್ರಾಯ್ಡ್ ಅಪ್ ಅನ್ನು "ಕುರುವ ಟೆಕ್ನಾಲಜೀಸ್ ಎಲ್ ಎಲ್ ಪೀ"
+ಅಬಿರುಧಿ ಪಡಿಸಿಧೆ .</string>
+    <string name="internet_not_available">ಇಂಟರ್ನೆಟ್ ಲಭ್ಯವಿಲ್ಲ, ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="invitelink">"ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ https://play.google.com/store/apps/details?id=com.kuruvatech.PipelineMap"</string>
+    <string name="app_version">1.0</string>
+    <string name="clickable">Clear Pipeline Map</string>
+    <string name="permission_rationale_location">permission_rationale_location</string>
+    <string name="location_permission_denied">location_permission_denied</string>
+    <string name="permission_required_toast">permission_required_toast.</string>
+    <string name="polyline_demo_description">polyline_demo_description.</string>
+    <string name="myline">My PipeLine</string>
+    <string name="map">PipeLine Map</string>
+    <string name="logout">ಲಾಗ್ ಔಟ್</string>
+
+</resources>

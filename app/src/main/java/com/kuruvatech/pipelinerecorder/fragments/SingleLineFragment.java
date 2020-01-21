@@ -538,6 +538,10 @@ public class SingleLineFragment extends Fragment implements OnMapReadyCallback, 
                                                 JSONArray obj4 = obj3.getJSONArray(j);
                                                 Double objlat = obj4.getDouble(0);
                                                 Double objlong = obj4.getDouble(1);
+//                                        1        if(obj4.length() > 2)
+//                                                {
+//                                                    Double objlong = obj4.getDouble(2);
+//                                                }2
                                                 lineInfo.getCoordinates().add(new LatLng(objlat, objlong));
 
                                             }

@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-permission android:name="android.permission.STORAGE" />
-
+    <uses-feature android:name="android.hardware.camera"   android:required="true" />
     <uses-feature android:name="android.hardware.location.gps" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -36,7 +36,7 @@
                  <category android:name="android.intent.category.DEFAULT" />
              </intent-filter>
          </activity>
-<activity android:name=".SingleViewActivity" />
+        <activity android:name=".SingleViewActivity" />
         <activity
             android:name=".FullScreenViewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize" />

@@ -61,6 +61,15 @@
                 android:visibility="invisible"
                 android:layout="@id/togglebutton"
                 />
+<!--            <ToggleButton-->
+<!--                android:id="@+id/camerabutton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textOn="camera"-->
+<!--                android:textOff="cameraoff"-->
+<!--                android:visibility="invisible"-->
+<!--                android:layout="@id/togglebutton"-->
+<!--                />-->
         </LinearLayout>
 
     </FrameLayout >

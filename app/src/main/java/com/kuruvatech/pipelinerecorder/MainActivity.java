@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Color;
@@ -14,6 +15,7 @@ import android.os.Bundle;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
+import com.kuruvatech.pipelinerecorder.fragments.CameraFragment;
 import com.kuruvatech.pipelinerecorder.fragments.LogoutFragment;
 import com.kuruvatech.pipelinerecorder.fragments.MainFragment;
 import com.kuruvatech.pipelinerecorder.fragments.MultiLineFragment;
@@ -127,6 +129,7 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         adapter.addFragment(new MainFragment(), getString(R.string.home));
         adapter.addFragment(new MultiLineFragment(), getString(R.string.map));
         adapter.addFragment(new SingleLineFragment(), getString(R.string.myline));
+        adapter.addFragment(new CameraFragment(), getString(R.string.camera));
         adapter.addFragment(new ShareAppFragment(), getString(R.string.share));
         adapter.addFragment(new Settingfragment(), getString(R.string.settings));
         adapter.addFragment(new LogoutFragment(), getString(R.string.logout));
@@ -199,14 +202,20 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
                     viewPager.setCurrentItem(1);
                     isMainFragmentOpen =  false;
                 }
-                else if(itemId == R.id.share)
+                else if(itemId == R.id.camera)
                 {
                     viewPager.setCurrentItem(3);
                     //frag = new AboutFragment();
                     isMainFragmentOpen =  false;
                 }
-                else if (itemId == R.id.settings) {
+                else if(itemId == R.id.share)
+                {
                     viewPager.setCurrentItem(4);
+                    //frag = new AboutFragment();
+                    isMainFragmentOpen =  false;
+                }
+                else if (itemId == R.id.settings) {
+                    viewPager.setCurrentItem(5);
                     isMainFragmentOpen =  false;
                 }
                 else if (itemId == R.id.logout) {
@@ -380,5 +389,12 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         conf.locale = myLocale;
         res.updateConfiguration(conf, dm);
 
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Toast.makeText(getApplicationContext(), "Camera main activity  onActivityResult", Toast.LENGTH_LONG).show();
     }
 }

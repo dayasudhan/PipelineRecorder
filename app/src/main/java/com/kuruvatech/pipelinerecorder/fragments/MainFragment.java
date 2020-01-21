@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
@@ -14,7 +15,9 @@ import android.net.ParseException;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
+import android.os.Environment;
 import android.os.Looper;
+import android.provider.MediaStore;
 import android.provider.Settings;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -74,9 +77,12 @@ import com.kuruvatech.pipelinerecorder.utils.GPSTracker;
 import com.kuruvatech.pipelinerecorder.utils.PermissionUtils;
 import com.kuruvatech.pipelinerecorder.utils.SessionManager;
 
+import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import android.os.Build;
 import android.widget.Toast;
@@ -93,6 +99,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import static android.app.Activity.RESULT_OK;
 import static com.google.android.gms.location.LocationServices.getFusedLocationProviderClient;
 
 
@@ -115,11 +122,12 @@ public class MainFragment extends Fragment  implements OnMapReadyCallback, Googl
     // City locations for mutable polyline.
 
     private static final LatLng KURUVA = new LatLng(14.142235317478407, 75.66676855087282);
-
+    String currentPhotoPath;
 
     private long UPDATE_INTERVAL = 2 * 1000;  /* 4 secs */
     private long FASTEST_INTERVAL = 1000; /* 2 sec */
 
+    static final int REQUEST_IMAGE_CAPTURE = 1;
 
     private static final int PATTERN_DASH_LENGTH_PX = 50;
     private static final int PATTERN_GAP_LENGTH_PX = 20;
@@ -190,6 +198,7 @@ public class MainFragment extends Fragment  implements OnMapReadyCallback, Googl
         });
         togglePlayButton = (ToggleButton) rootview.findViewById(R.id.togglebutton);
         togglePauseButton = (ToggleButton) rootview.findViewById(R.id.togglebutton2);
+       // cameraButton = (ToggleButton) rootview.findViewById(R.id.camerabutton);
         togglePlayButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 startLocationUpdates(isChecked,pause);
@@ -211,11 +220,34 @@ public class MainFragment extends Fragment  implements OnMapReadyCallback, Googl
 
             }
         });
-
+//        cameraButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//
+//                    Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//                    if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+//                        startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+//                    }
+//           }
+//        });
         mFragment = (SupportMapFragment)fragmentManager.findFragmentById(R.id.map);
         mFragment.getMapAsync(this);
         return rootview;
     }
+//    private File createImageFile() throws IOException {
+//        // Create an image file name
+//        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+//        String imageFileName = "JPEG_" + timeStamp + "_";
+//        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+//        File image = File.createTempFile(
+//                imageFileName,  /* prefix */
+//                ".jpg",         /* suffix */
+//                storageDir      /* directory */
+//        );
+//
+//        // Save a file: path for use with ACTION_VIEW intents
+//        currentPhotoPath = image.getAbsolutePath();
+//        return image;
+//    }
     private static boolean validatePhoneNumber(String phoneNo)
     {
         if (phoneNo.matches("\\d{10}"))
@@ -223,7 +255,15 @@ public class MainFragment extends Fragment  implements OnMapReadyCallback, Googl
         else if(phoneNo.matches("\\+\\d{12}")) return true;
         else return false;
     }
-
+//    @Override
+//    public  void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//          //  imageView.setImageBitmap(imageBitmap);
+//        }
+//    }
     private void submitDetails()
     {
                 final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());

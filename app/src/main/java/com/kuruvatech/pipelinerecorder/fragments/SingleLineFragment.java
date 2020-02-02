@@ -51,6 +51,7 @@ import com.google.gson.Gson;
 import com.kuruvatech.pipelinerecorder.FullScreenViewActivity;
 import com.kuruvatech.pipelinerecorder.R;
 import com.kuruvatech.pipelinerecorder.SingleViewActivity;
+import com.kuruvatech.pipelinerecorder.model.GeoPoint;
 import com.kuruvatech.pipelinerecorder.model.location;
 import com.kuruvatech.pipelinerecorder.utils.Constants;
 import com.kuruvatech.pipelinerecorder.utils.GPSTracker;
@@ -523,7 +524,7 @@ public class SingleLineFragment extends Fragment implements OnMapReadyCallback, 
                     try {
                         lineInfoList = new ArrayList<location>();
                         JSONArray jsonArray = new JSONArray(responseOrder);
-                        for(int i = 0; i < jsonArray.length(); i++)
+                        for(int i = 0; i < (jsonArray.length() -1); i++)
                         {
                             location lineInfo = null;
                             try {
@@ -538,12 +539,14 @@ public class SingleLineFragment extends Fragment implements OnMapReadyCallback, 
                                                 JSONArray obj4 = obj3.getJSONArray(j);
                                                 Double objlat = obj4.getDouble(0);
                                                 Double objlong = obj4.getDouble(1);
+                                                Double objele = obj4.getDouble(2);
+                                                Double objres = obj4.getDouble(3);
 //                                        1        if(obj4.length() > 2)
 //                                                {
 //                                                    Double objlong = obj4.getDouble(2);
 //                                                }2
                                                 lineInfo.getCoordinates().add(new LatLng(objlat, objlong));
-
+                                                lineInfo.getElevation().add(new GeoPoint(new LatLng(objlat, objlong),objele,objres));
                                             }
                                         }
                                     }
@@ -615,19 +618,20 @@ public class SingleLineFragment extends Fragment implements OnMapReadyCallback, 
                                 .width(mLinewidth)
                                 .clickable(true);
                         for (int j = 0; j < points; j++) {
-                            double lat = loc.getCoordinates().get(j).latitude;
-                            double lon = loc.getCoordinates().get(j).longitude;
+                            double lat = loc.getElevation().get(j).getLatlng().latitude;
+                            double lon = loc.getElevation().get(j).getLatlng().longitude;
                             LatLng latLng = new LatLng(lat, lon);
                             mPolylineOptions = mPolylineOptions.add(latLng);
-                            if (j % 30 == 0)
+                            if (j % 20 == 0)
                             {
                                 //    mMap.addMarker()
                                 //  private static final LatLng MELBOURNE = new LatLng(-37.813, 144.962);
-
+                                double elevation = loc.getElevation().get(j).getElevation();
+                              //  double lon = loc.getCoordinates().get(j).getLatlng().longitude;
                                 Marker melbourne = mMap.addMarker(new MarkerOptions()
                                         .position(latLng)
                                         .title("Elevation")
-                                        .snippet("super")
+                                        .snippet(new String(String.valueOf(elevation)))
                                         .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_marker)));
 
 

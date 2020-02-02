@@ -8,6 +8,7 @@ public class location {
     public location() {
         type = "";
         coordinates = new ArrayList<LatLng>();
+        elevation = new ArrayList<GeoPoint>();
         name = "";
         phone = "";
         paid = 0;
@@ -59,6 +60,16 @@ public class location {
     }
     String type;
     ArrayList<LatLng> coordinates ;
+
+    public ArrayList<GeoPoint> getElevation() {
+        return elevation;
+    }
+
+    public void setElevation(ArrayList<GeoPoint> elevation) {
+        this.elevation = elevation;
+    }
+
+    ArrayList<GeoPoint> elevation ;
     String name;
     String phone;
     String size;

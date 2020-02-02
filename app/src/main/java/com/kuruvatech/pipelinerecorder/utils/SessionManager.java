@@ -8,7 +8,7 @@ import android.content.SharedPreferences.Editor;
 import java.util.HashMap;
 
 import com.kuruvatech.pipelinerecorder.LoginActivity;
-//import com.kuruvatech.pipeline.NotificationListener;
+
 
 public class SessionManager {
 	// Shared Preferences
